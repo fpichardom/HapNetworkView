@@ -61,7 +61,7 @@ A java-based program for constructing and visualizing haplotype networks.
   When users click on a sample or category, the corresponding haplotypes will be displayed in shadow form.
   1. click on category ![image.png](https://cdn.nlark.com/yuque/0/2023/png/38378023/1691818514217-55f37183-91b4-4b27-987d-b2ddb0cdc2d2.png#averageHue=%2523f9f8f7&clientId=u7446bd05-af3f-4&from=paste&height=245&id=ud7641975&originHeight=848&originWidth=1730&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=250278&status=done&style=none&taskId=uc0320fc8-62d3-4d0f-af6b-546c44aced4&title=&width=500.3333740234375) 
   
-  2. click no sample: ![image.png](https://cdn.nlark.com/yuque/0/2023/png/38378023/1691818564768-76b7f806-dd71-4bea-aab2-0f13063eca0f.png#averageHue=%2523faf9f9&clientId=u7446bd05-af3f-4&from=paste&height=265&id=u9a2921bc&originHeight=906&originWidth=1705&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=235821&status=done&style=none&taskId=u60afd7b6-4a26-467f-8d4c-346239b0105&title=&width=498.3333740234375)
+  2. click on sample: ![image.png](https://cdn.nlark.com/yuque/0/2023/png/38378023/1691818564768-76b7f806-dd71-4bea-aab2-0f13063eca0f.png#averageHue=%2523faf9f9&clientId=u7446bd05-af3f-4&from=paste&height=265&id=u9a2921bc&originHeight=906&originWidth=1705&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=235821&status=done&style=none&taskId=u60afd7b6-4a26-467f-8d4c-346239b0105&title=&width=498.3333740234375)
 
 ### Information of each edge and node
 
