@@ -6,7 +6,7 @@ A java-based program for constructing and visualizing haplotype networks.
 
   - HapNetworkView integrates fastHaN(<https://github.com/ChenHuaLab/fastHaN>) to construct haplotype networks efficiently.
   - The use of the java library GraphStream enables better performance for visualization and auto layout of haplotype networks.
-  - HapNetworkView supports datasets with large sampel size (for example, N=5000)
+  - HapNetworkView supports datasets with large sample size (for example, N=5000)
 
 # Launch software
 
