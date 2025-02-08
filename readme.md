@@ -10,7 +10,7 @@ A java-based program for constructing and visualizing haplotype networks.
 
 # Launch software
 
-  We have included all three systems in a single compressed package. Users can download and use the appropriate system as needed.
+  We have included all three systems in a single compressed package. Users can download and use the appropriate system as needed. Please use the Java 8 as we compiled the code using Java 8 and the JavaFX package is included in this version.
 
   1. For Windows: a simple double-click on "HapNetworkView_1.0_windows.bat" initiates the software
 
