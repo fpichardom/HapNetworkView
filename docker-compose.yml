@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  hapnetworkview:
+    build: .
+    image: hapnetworkview:1.0
+    volumes:
+      # Mount your local data directory to access files from the host
+      - ./Examples:/app/Examples
+      # For Maven repository cache
+      - maven-repo:/root/.m2
+    environment:
+      # DISPLAY variable will be loaded from .env file or passed via command line
+      - DISPLAY
+      # For JavaFX
+      - _JAVA_OPTIONS=-Djava.awt.headless=false -Dprism.verbose=true -Dprism.order=sw -Djavafx.verbose=true
+      # For native libraries
+      - JAVA_LIBRARY_PATH=/app/src/main/resources/dll_and_so
+    # Keep the container running
+    tty: true
+    stdin_open: true
+
+volumes:
+  maven-repo:
