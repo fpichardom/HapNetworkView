@@ -101,6 +101,24 @@ The Docker setup will:
 4. Build the application using Maven inside the container
 5. Run the application with X11 forwarding to display the GUI on your host machine
 
+## Data Persistence
+
+The Docker setup includes persistent volumes for your data:
+
+1. **Examples**: Contains example files for testing
+   - Path in container: `/app/Examples`
+   - Path on host: `./Examples`
+
+2. **Input**: Place your input files here
+   - Path in container: `/app/input`
+   - Path on host: `./input`
+
+3. **Output**: Results and saved files will appear here
+   - Path in container: `/app/output`
+   - Path on host: `./output`
+
+Any files you place in the `input` directory will be accessible from within the application. Similarly, any files saved by the application to the `output` directory will be available on your host machine.
+
 ## Troubleshooting
 
 ### No GUI appears
@@ -130,9 +148,21 @@ xhost +
 
 ### File Access Issues
 
-If you need to access files from your host system, use the volume mount in docker-compose.yml:
+If you encounter issues accessing or saving files:
 
-```yaml
-volumes:
-  - /path/on/host:/app/Examples
-```
+1. **Permission issues**: The container runs as root by default. If you're having permission issues with the mounted volumes, you can change the ownership of the directories:
+   ```bash
+   # For Linux/macOS
+   sudo chown -R $USER:$USER input output
+   ```
+
+2. **Custom mount points**: If you need to mount additional directories, you can modify the docker-compose.yml file:
+   ```yaml
+   volumes:
+     - /path/on/host:/path/in/container
+   ```
+
+3. **File not found**: Make sure you're looking in the correct directory. Inside the container, your files are at:
+   - `/app/input` for input files
+   - `/app/output` for output files
+   - `/app/Examples` for example files

@@ -7,6 +7,10 @@ services:
     volumes:
       # Mount your local data directory to access files from the host
       - ./Examples:/app/Examples
+      # For input files (data to be processed)
+      - ./input:/app/input
+      # For output files (results, saved images, etc.)
+      - ./output:/app/output
       # For Maven repository cache
       - maven-repo:/root/.m2
     environment:

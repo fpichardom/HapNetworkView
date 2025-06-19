@@ -25,6 +25,9 @@ RUN yum update -y && yum install -y \
 # Create app directory
 WORKDIR /app
 
+# Create directories for input and output
+RUN mkdir -p /app/input /app/output
+
 # Copy the source code
 COPY src /app/src
 COPY pom.xml /app/
